@@ -1,9 +1,12 @@
-function Card() {
+interface CardProps {
+  body: React.ReactNode;
+}
+
+function Card(props: CardProps) {
+  const { body } = props;
   return (
     <div className="card" style={{ width: "350px" }}>
-      <div className="card-body">
-        <CardBody />
-      </div>
+      <div className="card-body">{body}</div>
     </div>
   );
 }
