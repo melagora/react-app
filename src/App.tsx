@@ -1,8 +1,12 @@
-import Card from "./components/Card";
+import Card, { CardBody } from "./components/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  return <Card body={"Hola mundo"} />;
+  return (
+    <Card>
+      <CardBody title="Hola mundo" text="Este es el texto" />
+    </Card>
+  );
 }
 
 export default App;
